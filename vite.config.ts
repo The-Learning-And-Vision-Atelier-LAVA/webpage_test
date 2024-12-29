@@ -17,7 +17,13 @@ export default defineConfig({
   },
 
   build: {
-    outDir: path.resolve(__dirname), 
+    outDir: path.resolve(__dirname, 'docs') // 设置输出路径为 docs
+    // index: path.resolve(__dirname, '../index.html'),
+    //
+    // // Paths
+    // assetsRoot: path.resolve(__dirname, '../'),
+    // assetsSubDirectory: 'static',
+    // assetsPublicPath: '/assets',
   },
 
   css: {
