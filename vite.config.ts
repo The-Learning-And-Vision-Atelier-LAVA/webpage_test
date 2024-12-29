@@ -18,7 +18,7 @@ export default defineConfig({
   },
 
   build: {
-    outDir: path.resolve(__dirname, 'docs') // 设置输出路径为 docs
+    outDir: path.resolve(__dirname) // 设置输出路径为 docs
     // index: path.resolve(__dirname, '../index.html'),
     //
     // // Paths

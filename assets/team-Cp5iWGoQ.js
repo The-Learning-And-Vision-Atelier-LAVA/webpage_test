@@ -1,4 +1,4 @@
-import{r as x,bi as F,bj as I,bk as J,e as Q,d as $,w as V,s as Z,o as K,k as N,aP as O,l as S,q as w,v as E,x as r,C as t,z as u,M as T,B as U,A as aa,Z as M,W as L,t as C,K as G,L as ea,a0 as ta,a1 as sa}from"./index-VWLQlmMi.js";import{E as ia,a as na}from"./anchor-link-DNAtl-TE.js";import{E as P,_ as k}from"./_plugin-vue_export-helper-SfvOKyMZ.js";import"./raf-DNOUc5rR.js";const ra=[{name:"郭裕兰",title:"教授",img:"/src/assets/data/Team/avatars/GuoYulan.jpeg",area:` 三维视觉与机器人
+import{r as x,bi as F,bj as I,bk as J,e as Q,d as $,w as V,s as Z,o as K,k as N,aP as O,l as S,q as w,v as E,x as r,C as t,z as u,M as T,B as U,A as aa,Z as M,W as L,t as C,K as G,L as ea,a0 as ta,a1 as sa}from"./index-DMFEH-6q.js";import{E as ia,a as na}from"./anchor-link-D3m2KmkG.js";import{E as P,_ as k}from"./_plugin-vue_export-helper-CCoWlXaG.js";import"./raf-CNtY2p3o.js";const ra=[{name:"郭裕兰",title:"教授",img:"/src/assets/data/Team/avatars/GuoYulan.jpeg",area:` 三维视觉与机器人
 
 获中国计算机学会自然科学一等奖`,url:"https://www.yulanguo.cn/",email:"guoyulan@sysu.edu.cn"},{name:"黄小红",title:"副教授",img:"",area:`图像处理与识别
 
