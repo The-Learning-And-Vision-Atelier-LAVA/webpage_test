@@ -18,7 +18,7 @@ export const FacultytableData = computed<Person[]>(() => [
     },
     {'name': '黄小红',
         'title': '副教授',
-        'img': ``,
+        'img': '',
         'area': '图像处理与识别\n\n获国家科技进步二等奖',
         'url': '',
         'email': 'huangxh75@mail.sysu.edu.cn',
@@ -591,7 +591,7 @@ export const AlumnitableData = computed<Person[]>(() => [
 // 2020届硕士
     {'name': '洪思宇',
         'title': '2020届 硕士',
-        'img': ``,
+        'img': '',
         'area': '华为2012实验室',
         'url': '',
         'email': '',

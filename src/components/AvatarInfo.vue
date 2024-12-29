@@ -26,7 +26,7 @@ const basePath = ref(import.meta.env.VITE_BASE_PATH);
 const imgSrc = computed(() =>
     props.img
         ? props.img
-        : `${basePath.value}/avatars/no_img.png`
+        : `/${basePath.value}/avatars/no_img.png`
 );
 
 </script>
