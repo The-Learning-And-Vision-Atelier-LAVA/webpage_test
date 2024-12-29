@@ -2,10 +2,14 @@
 import { defineProps } from 'vue';
 
 const props = defineProps({
-  researcharea: Object
+  researcharea: {
+    type: Object,
+    default: () => ({ area: '', img: '', intro: '', papers: [] })
+  }
 });
 
-const handleDownload = (url) => {
+
+const handleDownload = (url: any) => {
   window.open(url, '_blank')
 }
 </script>

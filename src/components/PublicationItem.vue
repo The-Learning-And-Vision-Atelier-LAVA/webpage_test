@@ -1,10 +1,13 @@
 <script setup lang="ts">
 import { defineProps } from 'vue';
 const props = defineProps({
-  pubyear: Object
+  pubyear: {
+    type: Object,
+    default: () => ({ year: '', papers: [] })
+  }
 });
 
-const handleDownload = (url) => {
+const handleDownload = (url: any) => {
   window.open(url, '_blank')
 }
 </script>
@@ -19,7 +22,7 @@ const handleDownload = (url) => {
 
       <el-row v-for="paper in pubyear.papers" style="margin-top: 15px">
         <el-card style="width: 100%" shadow="always" class="shadow">
-          <el-row gutter="20">
+          <el-row :gutter="20">
             <el-col :span="6">
               <img :src="paper.img" width="100%" height="150px" style="object-fit: contain"/>
             </el-col>

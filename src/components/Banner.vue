@@ -1,7 +1,7 @@
 <template>
   <div class="banner_container_custom" ref="carouselDiv">
-    <el-carousel  indicator-position="inside" width="100%" :height="carouselHeight + 'px' " :autoplay="true">
-      <el-carousel-item  v-for="item in Bannerimages" :key="item">
+    <el-carousel  width="100%" :height="carouselHeight + 'px' " :autoplay="true">
+      <el-carousel-item  v-for="(item, index) in Bannerimages" :key="index">
 <!--          <el-image :src="item.url" width="100%"></el-image>-->
           <img :src="item.url" width="100%" height="auto" style="object-fit: cover;" />
           <div  class="text_box" :style="{ top: `${carouselHeight - 180}px`, whiteSpace: 'pre-line' }">
@@ -13,16 +13,25 @@
 </template>
 
 <script lang="ts" setup>
-import { ref, onMounted } from 'vue';
-import {Bannerimages} from "/src/assets/home_carousel/Carouseldata.js";
+import { ref, onMounted, computed } from 'vue';
+import {Bannerimages} from "~/assets/home_carousel/Carouseldata.js";
 
 const carouselDiv = ref<HTMLDivElement>();
-const carouselHeight = ref('450'); // 默认高度
+
+const carouselHeight = ref<number>(450);
+// 使用计算属性确保高度始终为数字类型
+const computedHeight = computed(() => {
+  if (carouselDiv.value) {
+    const width = carouselDiv.value.offsetWidth;
+    return width * 0.45;
+  }
+  return carouselHeight.value;
+});
 
 onMounted(() => {
   if (carouselDiv.value) {
     const width = carouselDiv.value.offsetWidth;
-    carouselHeight.value = `${width * 0.45}`;
+    carouselHeight.value = width * 0.45;
   }
 });
 </script>

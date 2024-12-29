@@ -11,7 +11,7 @@ const props = defineProps({
   email: String,
 });
 
-const handleDownload = (url) => {
+const handleDownload = (url: any) => {
   if (url) {
     window.open(url, '_blank');
   }
