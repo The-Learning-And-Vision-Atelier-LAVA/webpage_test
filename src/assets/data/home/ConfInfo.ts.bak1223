@@ -1,0 +1,45 @@
+export interface Conf {
+    name: string
+    level: string
+    date: string
+    url: string
+}
+
+export const ConftableData: Conf[] =  [
+    {
+        name: 'ICCV',
+        level: 'CCF A',
+        date: '',
+        url: '',
+    },
+    {
+        name: 'CVPR',
+        level: 'CCF A',
+        date: '2025-11',
+        url: 'https://element-plus.org',
+    },
+    {
+        name: 'NeurIPS',
+        level: 'CCF A',
+        date: '2025-09-09',
+        url: 'https://aabb.org',
+    },
+    {
+        name: 'AAAI',
+        level: 'CCF A',
+        date: '2025-08-08',
+        url: 'https://aabb.org',
+    },
+    {
+        name: 'ICLR',
+        level: 'CCF A',
+        date: '2025-08-08',
+        url: 'https://aabb.org',
+    },
+    {
+        name: 'DICTA',
+        level: 'EI',
+        date: '2025-08-08',
+        url: 'https://aabb.org',
+    },
+]

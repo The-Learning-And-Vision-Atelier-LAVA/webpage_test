@@ -1,0 +1,48 @@
+// import dark theme
+@use "element-plus/theme-chalk/src/dark/css-vars.scss" as *;
+
+ :root {
+   --ep-color-primary: #bd232e;
+   --navigator-font-size: 18px;
+   --main-min-valid-width: 1000px;
+   --main-valid-width: 62.5%;  //显示内容占页面的宽度，最好 2 * main-side-left-width + main-valid-width = 1
+   --main-side-left-width: 18.75%; //显示内容距左侧的宽度，最好 2 * main-side-left-width + main-valid-width = 1
+   --main-max-width: 2400px;
+ }
+
+body {
+  font-family: Inter, system-ui, Avenir, "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB",
+    "Microsoft YaHei", "微软雅黑", Arial, sans-serif, "Times New Roman";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+  height: 100%;
+  min-width: 1600px;
+}
+
+a {
+  color: var(--ep-color-primary);
+}
+
+code {
+  border-radius: 2px;
+  padding: 2px 4px;
+  background-color: #dfdfdf; //var(--ep-color-primary-light-9);
+  color: #4f4f4f; // var(--ep-color-primary);
+}
+
+#nprogress {
+  pointer-events: none;
+}
+
+#nprogress .bar {
+  background: rgb(13, 148, 136);
+  //background: rgb(0, 0, 0);
+  opacity: 0.75;
+  position: fixed;
+  z-index: 1031;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+}
