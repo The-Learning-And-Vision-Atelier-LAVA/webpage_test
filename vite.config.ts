@@ -20,9 +20,17 @@ export default defineConfig({
     },
   },
 
+  // assetsInclude: [
+  //   '/public/carousel/*.jpg',
+  //   '/src/assets/data/Research/*/*.png',
+  //   '/src/assets/data/Research/*/*.jpg',
+  //   '/src/assets/data/Team/avatars/*.jpg',
+  //   '/src/assets/data/Team/avatars/*.png',
+  //   '/src/assets/data/Team/avatars/*.jpeg',
+  // ],
+
   build: {
     outDir: path.resolve(__dirname, 'docs'), // 设置输出路径为 docs
-    publicDir: '/webpage_test/assets',
   },
 
 
