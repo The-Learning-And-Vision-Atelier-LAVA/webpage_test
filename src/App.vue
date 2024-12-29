@@ -26,7 +26,7 @@
                 gutter="10">
           <el-col :span="8">
             <h1>联系我们</h1>
-            <h2>xyz<br/>xyz@sysu.edu.cn</h2>
+            <h2>郭裕兰教授<br/><br/>guoyulan@sysu.edu.cn</h2>
           </el-col>
           <el-col :span="16">
             <h1>相关链接</h1>
