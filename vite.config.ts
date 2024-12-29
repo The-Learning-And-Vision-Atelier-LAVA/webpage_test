@@ -1,16 +1,15 @@
-import path from 'path'
-import { defineConfig } from 'vite'
-
+import path from 'node:path'
 import Vue from '@vitejs/plugin-vue'
-import VueRouter from 'unplugin-vue-router/vite'
-import Components from 'unplugin-vue-components/vite'
-import { ElementPlusResolver } from 'unplugin-vue-components/resolvers'
 
 import Unocss from 'unocss/vite'
+import { ElementPlusResolver } from 'unplugin-vue-components/resolvers'
+import Components from 'unplugin-vue-components/vite'
+import VueRouter from 'unplugin-vue-router/vite'
+
+import { defineConfig } from 'vite'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: 'webpage_test/',
   resolve: {
     alias: {
       '~/': `${path.resolve(__dirname, 'src')}/`,
@@ -18,13 +17,7 @@ export default defineConfig({
   },
 
   build: {
-    outDir: path.resolve(__dirname) // 设置输出路径为 docs
-    // index: path.resolve(__dirname, '../index.html'),
-    //
-    // // Paths
-    // assetsRoot: path.resolve(__dirname, '../'),
-    // assetsSubDirectory: 'static',
-    // assetsPublicPath: '/assets',
+    outDir: path.resolve(__dirname, 'docs')
   },
 
   css: {
@@ -44,7 +37,7 @@ export default defineConfig({
       extensions: ['.vue', '.md'],
       dts: 'src/typed-router.d.ts',
     }),
-    
+
     Components({
       // allow auto load markdown components under `./src/components/`
       extensions: ['vue', 'md'],
@@ -63,7 +56,8 @@ export default defineConfig({
     Unocss(),
   ],
 
-  server: {
-    host: '0.0.0.0', // 监听所有网络接口
+  ssr: {
+    // TODO: workaround until they support native ESM
+    noExternal: ['element-plus'],
   },
 })
