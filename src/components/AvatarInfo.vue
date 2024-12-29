@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { defineProps, ref } from 'vue';
+import { defineProps, ref, computed } from 'vue';
 
 // 定义组件的属性
 const props = defineProps({
@@ -19,44 +19,19 @@ const handleDownload = (url: any) => {
 
 const NohandleDownload = () => {}
 
-//
-// import { useClipboard } from "@vueuse/core";
-//
-// const { copy, isSupported } = useClipboard();
-//
-// // 定义一个 ref 来存储需要复制的文本内容
-// const copyContent = ref(props.email);
-//
-// const handleCopy = () => {
-//   // 检查当前浏览器是否支持 Clipboard API
-//   if (!isSupported) {
-//     window.$message.error("您的浏览器不支持Clipboard API");
-//     return;
-//   }
-//
-//   // 调用 copy 方法将目标文本复制到剪贴板
-//   copy(copyContent.value);
-//
-//   // 提示用户复制成功并展示被复制的内容
-//   window.$message.success(`复制成功：${copyContent.value}`);
-// };
+// 构建基础路径
+const basePath = ref(import.meta.env.VITE_BASE_PATH);
+
+// 处理图片路径
+const imgSrc = computed(() =>
+    props.img
+        ? props.img
+        : `${basePath.value}/avatars/no_img.png`
+);
+
 </script>
 
 <template>
-<!--  <div class="info-card">-->
-<!--&lt;!&ndash;    <img :src="img" :alt="name" class="info-image" />&ndash;&gt;-->
-<!--    <div class="info-image">-->
-<!--&lt;!&ndash;      <el-avatar shape="square" :size="150" fit="cover" :src="img" />&ndash;&gt;-->
-<!--&lt;!&ndash;      <el-image shape="square" :size="150" fit="cover" :src="img" />&ndash;&gt;-->
-<!--      <img :src="img" width="100px" height="150px" style="object-fit: contain"/>-->
-<!--    </div>-->
-
-<!--    <div class="info-content">-->
-<!--      <p class="info-name">{{ name }}</p>-->
-<!--      <p class="info-title">{{ title }}</p>-->
-<!--      <p class="info-area">{{ area }}</p>-->
-<!--    </div>-->
-<!--  </div>-->
 
   <el-card
       :class="{'shadow': url}"
@@ -69,7 +44,7 @@ const NohandleDownload = () => {}
       <el-col :span="10">
         <div class="info-image">
 <!--          <img :src="img" width="100%" height="auto" style="object-fit: contain; max-height: 200px;" />-->
-          <img :src="img || 'assets/data/Team/avatars/no_img.png'" width="100%" height="auto" style="object-fit: contain; max-height: 200px;" />
+          <img :src="imgSrc" width="100%" height="auto" style="object-fit: contain; max-height: 200px;" />
           <!--        <el-avatar shape="circle" :size="150" fit="cover" :src="img" style="max-width: 150px;"/>-->
         </div>
       </el-col>
@@ -84,15 +59,6 @@ const NohandleDownload = () => {}
 
         </div>
       </el-col>
-<!--      <el-col :span="14">-->
-<!--        <div class="info-content">-->
-<!--          <p class="info-name">{{ name }}</p>-->
-<!--          <p class="info-title">{{ title }}</p>-->
-<!--          <p class="info-area" style="white-space: pre-line;">{{ area }}</p>-->
-<!--&lt;!&ndash;          <p class="info-email">{{ email }}</p>&ndash;&gt;-->
-
-<!--        </div>-->
-<!--      </el-col>-->
     </el-row>
     <el-row>
       <el-card class="info-email" shadow="never" style="height: 30px; width: 100%;" @click.stop="NohandleDownload" ><p style="margin-top: -5px;">{{ email }}</p></el-card>
@@ -112,14 +78,9 @@ const NohandleDownload = () => {}
 }
 
 .info-image {
-  //min-width: 150px; /* 根据需要调整图片大小 */
-  //border-radius: 10px; /* 圆角边框 */
-  //width: 45%;
 }
 
 .info-content {
-  //min-width: 100px;
-  //width: 55%;
 }
 
 .info-name {
