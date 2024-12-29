@@ -13,7 +13,7 @@ export const AreatableData: Area[] =  [
         id: 'scene_receip_and_recon',
         area: '三维场景感知与重建',
         intro: '三维场景感知与重建致力于通过采集三维环境中的图像、点云、深度等数据，感知周围环境的三维物体，重建场景的三维结构，实验室在此方向主要聚焦深度估计、点云配准制图、点云语义理解等理论和方法，相关研究成果应用于某型自动抓取机器人等。',
-        img: '/src/assets/data/Research/area/scene_receip_and_recon.png',
+        img: '/${import.meta.env.VITE_BASE_PATH}/research_area/scene_receip_and_recon.png',
         papers: [
             {
                 "title": "You Only Train Once: Learning General and Distinctive 3D Local Descriptors",
@@ -42,7 +42,7 @@ export const AreatableData: Area[] =  [
         id: 'generation_and_edition',
         area: '三维内容生成与编辑',
         intro: '三维内容生成与编辑致力于利用文本、图像等多样化的控制条件生成三维内容并对其进行灵活可控的编辑，实验室在此方向主要聚焦三维重建、文生三维、三维编辑等理论和方法，相关成果应用于场景重建与制图、无人驾驶系统等。',
-        img: '/src/assets/data/Research/area/generation_and_edition.png',
+        img: '/${import.meta.env.VITE_BASE_PATH}/research_area/generation_and_edition.png',
         papers: [
             {
                 "title": "Exploring Fine-Grained Sparsity in Neural Networks for Efficient Inference",
@@ -71,7 +71,7 @@ export const AreatableData: Area[] =  [
         id: 'visial_sigmentation',
         area: '视觉信息理解与分析',
         intro: '视觉信息理解与分析致力于对图像、视频等视觉内容进行理解与分析，获取视觉内容中物体、场景、事件等语义信息，实验室在此方向主要聚焦图像/视频目标检测、图像/视频语义分割等理论和方法，相关研究成果应用于视觉导航定位、图像解译理解等。',
-        img: '/src/assets/data/Research/area/visial_sigmentation.png',
+        img: '/${import.meta.env.VITE_BASE_PATH}/research_area/visial_sigmentation.png',
         papers: [
             {
                 "title": "Beyond Appearance: Multi-Frame Spatio-Temporal Context Memory Networks for Efficient And Robust Video Object Segmentation",
@@ -100,7 +100,7 @@ export const AreatableData: Area[] =  [
         id: 'visual_enhancement',
         area: '视觉内容复原与增强',
         intro: '视觉内容复原与增强致力于提高图像、视频等视觉内容的清晰度，使其具有更好的感官视觉体验马桶是更易于理解分析，实验室在此方向主要聚焦图像超分辨、三维内容增强等理论和方法，相关研究成果应用于某型图像增强子系统等。',
-        img: '/src/assets/data/Research/area/visual_enhancement.png',
+        img: '/${import.meta.env.VITE_BASE_PATH}/research_area/visual_enhancement.png',
         papers: [
             {
                 "title": "Unsupervised Degradation Representation Learning for Unpaired Restoration of Images And Point Clouds",
