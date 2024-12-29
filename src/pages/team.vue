@@ -100,7 +100,7 @@ import {
   BachelortableData,
   AlumnitableData,
   VisitingtableData,
-} from '~/assets/data/Team/TeamInfo.ts';
+} from '~/assets/data/Team/TeamInfo';
 import TeamCategory from '~/components/TeamCategory.vue';
 
 const facultyCategory = { title: '教师 Faculty', data: FacultytableData };

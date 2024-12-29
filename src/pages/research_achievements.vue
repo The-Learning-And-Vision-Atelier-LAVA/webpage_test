@@ -2,7 +2,7 @@
 import { PublicationstableData } from '~/assets/data/Research/PublicationsInfo';
 import PublicationItem from "~/components/PublicationItem.vue";
 
-const handleDownload = (url) => {
+const handleDownload = (url: any) => {
   window.open(url, '_blank')
 }
 </script>

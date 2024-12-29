@@ -1,7 +1,7 @@
 <script setup lang="ts">
 
 import ResearchArea from "~/components/ResearchAreaInfo.vue";
-import { AreatableData } from '~/assets/data/Research/AreaInfo.ts';
+import { AreatableData } from '~/assets/data/Research/AreaInfo';
 </script>
 
 <template>
