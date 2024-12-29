@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { PublicationstableData } from '~/assets/data/Research/PublicationsInfo';
+import { PublicationstableData } from '../../assets/data/Research/PublicationsInfo';
 import PublicationItem from "~/components/PublicationItem.vue";
 
 const handleDownload = (url: any) => {

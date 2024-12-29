@@ -303,9 +303,9 @@
 <script lang="ts" setup>
 
 import { Timer } from '@element-plus/icons-vue'
-import {Conf, ConftableData} from '~/assets/data/home/ConfInfo'
-import {Event, EventtableData} from '~/assets/data/home/EventsInfo'
-import {Paper, PapertableData} from '~/assets/data/home/PaperInfo'
+import {Conf, ConftableData} from '../../assets/data/home/ConfInfo'
+import {Event, EventtableData} from '../../assets/data/home/EventsInfo'
+import {Paper, PapertableData} from '../../assets/data/home/PaperInfo'
 
 const handleDownload = (url: any) => {
   window.open(url, '_blank')

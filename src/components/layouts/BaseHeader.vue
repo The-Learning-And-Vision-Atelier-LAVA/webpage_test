@@ -19,7 +19,7 @@ import { repository } from '~/../package.json'
       <div class="flex items-center justify-center gap-2">
         <img
             style="width: 100px"
-            src="/src/assets/lavalogo.png"
+            src="/assets/lavalogo.png"
             alt="LAVA logo"
         />
       </div>

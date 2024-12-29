@@ -1,4 +1,4 @@
-import {Paper} from "~/assets/data/home/PaperInfo";
+import {Paper} from "../home/PaperInfo";
 
 export interface Area {
     id: string;

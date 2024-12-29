@@ -45,7 +45,7 @@ const handleDownload = (url: any) => {
       <el-col :span="10">
         <div class="info-image">
           <!--          <img :src="img" width="100%" height="auto" style="object-fit: contain; max-height: 200px;" />-->
-          <img :src="img || '/src/assets/data/Team/avatars/no_img.png'" width="100%" height="auto" style="object-fit: contain; max-height: 200px;" />
+          <img :src="img || 'assets/data/Team/avatars/no_img.png'" width="100%" height="auto" style="object-fit: contain; max-height: 200px;" />
           <!--        <el-avatar shape="circle" :size="150" fit="cover" :src="img" style="max-width: 150px;"/>-->
         </div>
       </el-col>

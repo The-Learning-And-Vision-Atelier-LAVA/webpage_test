@@ -1,4 +1,4 @@
-import {Person} from "~/assets/data/Team/TeamInfo";
+import {Person} from "../Team/TeamInfo";
 
 export interface Resourceitem {
     img: String  //资源的图片，硬件就是外观图片，软件就是截图，数据集给出一组样例
