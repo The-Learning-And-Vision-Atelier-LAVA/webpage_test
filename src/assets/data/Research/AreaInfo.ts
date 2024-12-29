@@ -16,7 +16,7 @@ export const AreatableData = computed<Area[]>(() => [
         id: 'scene_receip_and_recon',
         area: '三维场景感知与重建',
         intro: '三维场景感知与重建致力于通过采集三维环境中的图像、点云、深度等数据，感知周围环境的三维物体，重建场景的三维结构，实验室在此方向主要聚焦深度估计、点云配准制图、点云语义理解等理论和方法，相关研究成果应用于某型自动抓取机器人等。',
-        img: `/${base}/research_area/scene_receip_and_recon.png`,
+        img: `/${import.meta.env.VITE_BASE_PATH}/research_area/scene_receip_and_recon.png`,
         papers: [
             {
                 "title": "You Only Train Once: Learning General and Distinctive 3D Local Descriptors",
