@@ -1,0 +1,145 @@
+import {Paper} from "~/assets/data/home/PaperInfo";
+
+export interface Area {
+    id: string;
+    area: string
+    intro: string
+    img: string
+    papers: Paper []
+}
+
+export const AreatableData: Area[] =  [
+    {
+        id: 'depth_estimation',
+        area: '深度估计与三维重建',
+        intro: '因为三维的形状比二维影像有更多资讯，因此直接从二维影像推测三维形状对计算机而言并不是容易的工作，' +
+            '但对人类来说，对于生活中常见到的物体，我们常常可以从单一角度看，就可以推测经验上物体的整个形状(在三维空间中的样子)，' +
+            '人类之所以能做到这样是因为长久经验的累积，因此对于计算机而言，如果学习过够多二维影像以及三维形状的资讯，' +
+            '理论上也能够做到，因此近来有不少利用深度学习的三维重建方法，利用大量的训练资料(例如:影像以及相对应的三维形状)' +
+            '来训练深度神经网络或是卷积神经网络建构的模型，达到由单张或多张二维影像作为输入，推测三维形状。' +
+            '此外，有些大量三维模型的数据库[1]也在近年被建立，以便于这些深度学习模型的训练与相互比较的基础。',
+        img: '/src/assets/data/Research/area/depth_estimation.png',
+        papers: [
+            {
+                title: 'Unsupervised Degradation Representation Learning for Unpaired Restoration of Images and Point Clouds',
+                book: 'IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI)',
+                author: 'Longguang Wang, Yulan Guo*, Yingqian Wang, Xiaoyu Dong, Qingyu Xu, Jungang Yang, Wei An',
+                url: 'https://ieeexplore.ieee.org/document/10738507?denied=',
+                code: '',
+            },
+            {
+                title: 'Deep Learning for 3D Point Clouds: A Survey',
+                book: 'IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI)',
+                author: 'Yulan Guo, Hanyun Wang, Qingyong Hu, Hao Liu, Li Liu, Mohammed Bennamoun',
+                url: 'https://arxiv.org/pdf/1912.12033',
+                code: 'https://github.com/QingyongHu/SoTA-Point-Cloud',
+            },
+            {
+                title: 'Distractor-Free Novel View Synthesis via Exploiting Memorization Effect in Optimization',
+                book: 'European Conference on Computer Vision, ECCV 2024.',
+                author: 'Yukun Wang, Kunhong Li, Minglin Chen, Longguang Wang, Shunbo Zhou, Kaiwen Xue, Yulan Guo',
+                url: 'https://www.ecva.net/papers/eccv_2024/papers_ECCV/html/7158_ECCV_2024_paper.php',
+                code: 'https://github.com/Yukun66/MemE',
+            },
+        ]
+    },
+    {
+        id: 'super_resolution',
+        area: '图像超分辨率',
+        intro: '因为三维的形状比二维影像有更多资讯，因此直接从二维影像推测三维形状对计算机而言并不是容易的工作，' +
+            '但对人类来说，对于生活中常见到的物体，我们常常可以从单一角度看，就可以推测经验上物体的整个形状(在三维空间中的样子)，' +
+            '人类之所以能做到这样是因为长久经验的累积，因此对于计算机而言，如果学习过够多二维影像以及三维形状的资讯，',
+        img: '/src/assets/data/Research/area/image_super_resolution.png',
+        papers: [
+            {
+                title: 'Unsupervised Degradation Representation Learning for Unpaired Restoration of Images and Point Clouds',
+                book: 'IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI)',
+                author: 'Longguang Wang, Yulan Guo*, Yingqian Wang, Xiaoyu Dong, Qingyu Xu, Jungang Yang, Wei An',
+                url: 'https://ieeexplore.ieee.org/document/10738507?denied=',
+                code: '',
+            },
+            {
+                title: 'Deep Learning for 3D Point Clouds: A Survey',
+                book: 'IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI)',
+                author: 'Yulan Guo, Hanyun Wang, Qingyong Hu, Hao Liu, Li Liu, Mohammed Bennamoun',
+                url: 'https://arxiv.org/pdf/1912.12033',
+                code: 'https://github.com/QingyongHu/SoTA-Point-Cloud',
+            },
+            {
+                title: 'Distractor-Free Novel View Synthesis via Exploiting Memorization Effect in Optimization',
+                book: 'European Conference on Computer Vision, ECCV 2024.',
+                author: 'Yukun Wang, Kunhong Li, Minglin Chen, Longguang Wang, Shunbo Zhou, Kaiwen Xue, Yulan Guo',
+                url: 'https://www.ecva.net/papers/eccv_2024/papers_ECCV/html/7158_ECCV_2024_paper.php',
+                code: 'https://github.com/Yukun66/MemE',
+            },
+        ]
+    },
+    {
+        id: 'point_cloud',
+        area: '点云语义理解与压缩',
+        intro: '因为三维的形状比二维影像有更多资讯，因此直接从二维影像推测三维形状对计算机而言并不是容易的工作，' +
+            '但对人类来说，对于生活中常见到的物体，我们常常可以从单一角度看，就可以推测经验上物体的整个形状(在三维空间中的样子)，' +
+            '人类之所以能做到这样是因为长久经验的累积，因此对于计算机而言，如果学习过够多二维影像以及三维形状的资讯，' +
+            '理论上也能够做到，因此近来有不少利用深度学习的三维重建方法，利用大量的训练资料(例如:影像以及相对应的三维形状)' +
+            '来训练深度神经网络或是卷积神经网络建构的模型，达到由单张或多张二维影像作为输入，推测三维形状。' +
+            '此外，有些大量三维模型的数据库[1]也在近年被建立，以便于这些深度学习模型的训练与相互比较的基础。',
+        img: '/src/assets/data/Research/area/depth_estimation.png',
+        papers: [
+            {
+                title: 'Unsupervised Degradation Representation Learning for Unpaired Restoration of Images and Point Clouds',
+                book: 'IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI)',
+                author: 'Longguang Wang, Yulan Guo*, Yingqian Wang, Xiaoyu Dong, Qingyu Xu, Jungang Yang, Wei An',
+                url: 'https://ieeexplore.ieee.org/document/10738507?denied=',
+                code: '',
+            },
+            {
+                title: 'Deep Learning for 3D Point Clouds: A Survey',
+                book: 'IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI)',
+                author: 'Yulan Guo, Hanyun Wang, Qingyong Hu, Hao Liu, Li Liu, Mohammed Bennamoun',
+                url: 'https://arxiv.org/pdf/1912.12033',
+                code: 'https://github.com/QingyongHu/SoTA-Point-Cloud',
+            },
+            {
+                title: 'Distractor-Free Novel View Synthesis via Exploiting Memorization Effect in Optimization',
+                book: 'European Conference on Computer Vision, ECCV 2024.',
+                author: 'Yukun Wang, Kunhong Li, Minglin Chen, Longguang Wang, Shunbo Zhou, Kaiwen Xue, Yulan Guo',
+                url: 'https://www.ecva.net/papers/eccv_2024/papers_ECCV/html/7158_ECCV_2024_paper.php',
+                code: 'https://github.com/Yukun66/MemE',
+            },
+        ]
+    },
+    {
+        id: '3d_generation',
+        area: '三维内容生成',
+        intro: '因为三维的形状比二维影像有更多资讯，因此直接从二维影像推测三维形状对计算机而言并不是容易的工作，' +
+            '但对人类来说，对于生活中常见到的物体，我们常常可以从单一角度看，就可以推测经验上物体的整个形状(在三维空间中的样子)，' +
+            '人类之所以能做到这样是因为长久经验的累积，因此对于计算机而言，如果学习过够多二维影像以及三维形状的资讯，' +
+            '理论上也能够做到，因此近来有不少利用深度学习的三维重建方法，利用大量的训练资料(例如:影像以及相对应的三维形状)' +
+            '来训练深度神经网络或是卷积神经网络建构的模型，达到由单张或多张二维影像作为输入，推测三维形状。' +
+            '此外，有些大量三维模型的数据库[1]也在近年被建立，以便于这些深度学习模型的训练与相互比较的基础。',
+        img: '/src/assets/data/Research/area/depth_estimation.png',
+        papers: [
+            {
+                title: 'Unsupervised Degradation Representation Learning for Unpaired Restoration of Images and Point Clouds',
+                book: 'IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI)',
+                author: 'Longguang Wang, Yulan Guo*, Yingqian Wang, Xiaoyu Dong, Qingyu Xu, Jungang Yang, Wei An',
+                url: 'https://ieeexplore.ieee.org/document/10738507?denied=',
+                code: '',
+            },
+            {
+                title: 'Deep Learning for 3D Point Clouds: A Survey',
+                book: 'IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI)',
+                author: 'Yulan Guo, Hanyun Wang, Qingyong Hu, Hao Liu, Li Liu, Mohammed Bennamoun',
+                url: 'https://arxiv.org/pdf/1912.12033',
+                code: 'https://github.com/QingyongHu/SoTA-Point-Cloud',
+            },
+            {
+                title: 'Distractor-Free Novel View Synthesis via Exploiting Memorization Effect in Optimization',
+                book: 'European Conference on Computer Vision, ECCV 2024.',
+                author: 'Yukun Wang, Kunhong Li, Minglin Chen, Longguang Wang, Shunbo Zhou, Kaiwen Xue, Yulan Guo',
+                url: 'https://www.ecva.net/papers/eccv_2024/papers_ECCV/html/7158_ECCV_2024_paper.php',
+                code: 'https://github.com/Yukun66/MemE',
+            },
+        ]
+    },
+]
