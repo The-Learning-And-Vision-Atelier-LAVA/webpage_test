@@ -6,7 +6,7 @@ import {Person, FacultytableData, StafftableData, PhDtableData, MastertableData,
 
 <template>
 <div class="main">
-  <el-row style="margin-top: 20px" gutter="10">
+  <el-row style="margin-top: 20px" :gutter="10">
     <el-col :span="24" >
       <el-card class="info_card" shadow="always">
         <div class="card-header">

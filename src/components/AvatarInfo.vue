@@ -11,32 +11,35 @@ const props = defineProps({
   email: String,
 });
 
-const handleDownload = (url) => {
+const handleDownload = (url: any) => {
   if (url) {
     window.open(url, '_blank');
   }
 }
 
-import { useClipboard } from "@vueuse/core";
+const NohandleDownload = () => {}
 
-const { copy, isSupported } = useClipboard();
-
-// 定义一个 ref 来存储需要复制的文本内容
-const copyContent = ref(props.email);
-
-const handleCopy = () => {
-  // 检查当前浏览器是否支持 Clipboard API
-  if (!isSupported) {
-    window.$message.error("您的浏览器不支持Clipboard API");
-    return;
-  }
-
-  // 调用 copy 方法将目标文本复制到剪贴板
-  copy(copyContent.value);
-
-  // 提示用户复制成功并展示被复制的内容
-  window.$message.success(`复制成功：${copyContent.value}`);
-};
+//
+// import { useClipboard } from "@vueuse/core";
+//
+// const { copy, isSupported } = useClipboard();
+//
+// // 定义一个 ref 来存储需要复制的文本内容
+// const copyContent = ref(props.email);
+//
+// const handleCopy = () => {
+//   // 检查当前浏览器是否支持 Clipboard API
+//   if (!isSupported) {
+//     window.$message.error("您的浏览器不支持Clipboard API");
+//     return;
+//   }
+//
+//   // 调用 copy 方法将目标文本复制到剪贴板
+//   copy(copyContent.value);
+//
+//   // 提示用户复制成功并展示被复制的内容
+//   window.$message.success(`复制成功：${copyContent.value}`);
+// };
 </script>
 
 <template>
@@ -62,7 +65,7 @@ const handleCopy = () => {
       @click="handleDownload(url)"
       :shadow="url ? 'hover' : 'never'"
   >
-    <el-row gutter="10">
+    <el-row :gutter="10">
       <el-col :span="10">
         <div class="info-image">
 <!--          <img :src="img" width="100%" height="auto" style="object-fit: contain; max-height: 200px;" />-->
@@ -72,7 +75,7 @@ const handleCopy = () => {
       </el-col>
       <el-col :span="14">
         <div class="info-content">
-          <el-row gutter="10">
+          <el-row :gutter="10">
             <p class="info-name">{{ name }}</p>
           </el-row>
           <p class="info-title">{{ title }}</p>
@@ -92,7 +95,7 @@ const handleCopy = () => {
 <!--      </el-col>-->
     </el-row>
     <el-row>
-      <el-card class="info-email" shadow="never" style="height: 30px; width: 100%;" @click.stop="handleCopy" @keyup="handleCopy" ><p style="margin-top: -5px;">{{ email }}</p></el-card>
+      <el-card class="info-email" shadow="never" style="height: 30px; width: 100%;" @click.stop="NohandleDownload" ><p style="margin-top: -5px;">{{ email }}</p></el-card>
     </el-row>
   </el-card>
 </template>

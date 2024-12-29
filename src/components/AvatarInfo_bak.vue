@@ -41,7 +41,7 @@ const handleDownload = (url) => {
       @click="handleDownload(url)"
       :shadow="url ? 'hover' : 'never'"
   >
-    <el-row gutter="10">
+    <el-row :gutter="10">
       <el-col :span="10">
         <div class="info-image">
           <!--          <img :src="img" width="100%" height="auto" style="object-fit: contain; max-height: 200px;" />-->
@@ -51,7 +51,7 @@ const handleDownload = (url) => {
       </el-col>
       <el-col :span="14">
         <div class="info-content">
-          <el-row gutter="10">
+          <el-row :gutter="10">
             <el-col :span="18"><p class="info-name">{{ name }}</p></el-col>
             <el-col :span="6">
               <el-popover

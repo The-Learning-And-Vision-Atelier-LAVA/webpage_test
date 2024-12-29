@@ -23,7 +23,7 @@
                   margin-left: var(--main-side-left-width);
                   margin-bottom: 20px;
                 "
-                gutter="10">
+                :gutter="10">
           <el-col :span="8">
             <h1>联系我们</h1>
             <h2>郭裕兰教授<br/><br/>guoyulan@sysu.edu.cn</h2>
@@ -139,7 +139,7 @@
 
 </style>
 <script setup lang="ts">
-const handleClick = (url) => {
+const handleClick = (url: any) => {
   window.open(url, '_blank')
 }
 </script>

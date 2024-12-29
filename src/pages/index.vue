@@ -3,7 +3,7 @@
   <Banner />
 
   <div class="main">
-    <el-row style="margin-top: 20px" gutter="10">
+    <el-row style="margin-top: 20px" :gutter="10">
       <el-col :span="24">
         <el-card class="info_card" shadow="always">
           <template #header>
@@ -22,7 +22,7 @@
 
 
     </el-row>
-    <el-row style="margin-top: 20px" gutter="10">
+    <el-row style="margin-top: 20px" :gutter="10">
       <el-col :span="12">
         <el-card class="info_card" shadow="always">
           <template #header>

@@ -1,6 +1,6 @@
 <template>
 <!--  <div class="main">-->
-<!--    <el-row style="margin-top: 20px" gutter="10">-->
+<!--    <el-row style="margin-top: 20px" :gutter="10">-->
 <!--      <el-col :span="24">-->
 <!--        <el-card class="info_card" shadow="always">-->
 <!--          &lt;!&ndash; 使用新的组件展示每个类别的成员 &ndash;&gt;-->
@@ -42,7 +42,7 @@
 <!--  </el-aside>-->
 
   <el-main class="main">
-    <el-row style="margin-top: 20px" gutter="10">
+    <el-row style="margin-top: 20px" :gutter="10">
       <el-card class="info_card" shadow="always">
         <!-- 使用新的组件展示每个类别的成员 -->
         <div id="faculty"><TeamCategory :category="facultyCategory" /></div>

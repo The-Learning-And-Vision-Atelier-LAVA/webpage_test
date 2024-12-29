@@ -17,7 +17,7 @@ const handleClick = (url) => {
   </el-aside>
 
   <el-main class="main">
-    <el-row style="margin-top: 20px" gutter="10">
+    <el-row style="margin-top: 20px" :gutter="10">
       <el-card class="info_card" shadow="always">
         <el-col :span="24">
           <div class="card-body">

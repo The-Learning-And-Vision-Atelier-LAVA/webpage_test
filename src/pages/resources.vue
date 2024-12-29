@@ -20,7 +20,7 @@ const datasetCategory = { title: '数据资源', data: DatasettableData };
   </el-aside>
 
   <el-main class="main">
-    <el-row style="margin-top: 20px" gutter="10">
+    <el-row style="margin-top: 20px" :gutter="10">
       <el-card class="info_card" shadow="always">
         <div id="server"><ResourceCategory :category="severCategory" /></div>
         <div id="hardware"><ResourceCategory :category="hardwareCategory" /></div>

@@ -20,7 +20,7 @@ const handleDownload = (url) => {
   </el-aside>
 
   <el-main class="main">
-    <el-row style="margin-top: 20px" gutter="10">
+    <el-row style="margin-top: 20px" :gutter="10">
       <el-card class="info_card" shadow="always">
         <div  v-for="pubyear in PublicationstableData" :id="`${pubyear.id.toLowerCase().replace(/\s+/g, '-')}`">
           <el-col :span="24" >
