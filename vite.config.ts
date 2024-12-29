@@ -1,5 +1,5 @@
 import path from 'node:path'
-import { defineConfig } from 'vite'
+import { defineConfig, loadEnv } from 'vite';
 
 import Vue from '@vitejs/plugin-vue'
 import VueRouter from 'unplugin-vue-router/vite'
@@ -8,8 +8,11 @@ import { ElementPlusResolver } from 'unplugin-vue-components/resolvers'
 
 import Unocss from 'unocss/vite'
 
+
+
 // https://vitejs.dev/config/
 export default defineConfig({
+
   base: '/webpage_test/',
   resolve: {
     alias: {
@@ -18,7 +21,8 @@ export default defineConfig({
   },
 
   build: {
-    outDir: path.resolve(__dirname, 'docs') // 设置输出路径为 docs
+    outDir: path.resolve(__dirname, 'docs'), // 设置输出路径为 docs
+    publicDir: '/webpage_test/assets',
   },
 
 
