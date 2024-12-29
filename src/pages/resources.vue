@@ -1,6 +1,6 @@
 <script setup lang="ts">
 
-import {ServertableData, HardwawretableData, SoftwawretableData, DatasettableData} from "../../assets/data/Resource/ResourceInfo";
+import {ServertableData, HardwawretableData, SoftwawretableData, DatasettableData} from "~/assets/data/Resource/ResourceInfo";
 import ResourceCategory from "~/components/ResourceCategory.vue";
 
 const severCategory = { title: '计算资源', data: ServertableData };

@@ -14,7 +14,7 @@
 
 <script lang="ts" setup>
 import { ref, onMounted, computed } from 'vue';
-import {Bannerimages} from "../../assets/home_carousel/Carouseldata.js";
+import {Bannerimages} from "~/assets/home_carousel/Carouseldata.js";
 
 const carouselDiv = ref<HTMLDivElement>();
 
