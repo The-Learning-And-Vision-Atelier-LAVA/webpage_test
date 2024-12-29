@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import {Event, EventtableData} from '~/assets/data/home/EventsInfo.ts'
+import {Event, EventtableData} from '~/assets/data/home/EventsInfo'
 </script>
 
 <template>

@@ -26,7 +26,10 @@ import { defineProps } from 'vue';
 import AvatarInfo from '~/components/AvatarInfo.vue';
 
 const props = defineProps({
-  category: Object
+  category: {
+    type: Object,
+    default: () => ({title: '', data: []}),
+  }
 });
 </script>
 

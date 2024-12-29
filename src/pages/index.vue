@@ -132,7 +132,7 @@
       </el-col>
     </el-row>
 
-    <el-row style="margin-top: 20px" gutter="10">
+    <el-row style="margin-top: 20px" :gutter="10">
       <el-col :span="24">
         <el-card class="info_card" shadow="always">
           <template #header>
@@ -303,11 +303,11 @@
 <script lang="ts" setup>
 
 import { Timer } from '@element-plus/icons-vue'
-import {Conf, ConftableData} from '~/assets/data/home/ConfInfo.ts'
-import {Event, EventtableData} from '~/assets/data/home/EventsInfo.ts'
-import {Paper, PapertableData} from '~/assets/data/home/PaperInfo.ts'
+import {Conf, ConftableData} from '~/assets/data/home/ConfInfo'
+import {Event, EventtableData} from '~/assets/data/home/EventsInfo'
+import {Paper, PapertableData} from '~/assets/data/home/PaperInfo'
 
-const handleDownload = (url) => {
+const handleDownload = (url: any) => {
   window.open(url, '_blank')
 }
 </script>

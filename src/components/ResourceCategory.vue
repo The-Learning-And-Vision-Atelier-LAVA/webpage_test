@@ -3,7 +3,10 @@ import { defineProps } from 'vue';
 import ResourceItem from "~/components/ResourceItem.vue";
 
 const props = defineProps({
-  category: Object
+  category: {
+    type: Object,
+    default: () => ({ title: '', data: [] })
+  }
 });
 </script>
 

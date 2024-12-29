@@ -11,14 +11,14 @@ const props = defineProps({
   intro: String  //资源的介绍
 });
 
-const handleDownload = (url) => {
+const handleDownload = (url: any) => {
   window.open(url, '_blank')
 }
 </script>
 
 <template>
   <el-card style="height: 100%" class="shadow">
-    <el-row gutter="2">
+    <el-row :gutter="2">
       <el-col :span="8">
         <div class="info-image">
           <img :src="img" width="100%" height="80%" style="object-fit: cover; max-height: 150px;" />

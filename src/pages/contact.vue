@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const handleClick = (url) => {
+const handleClick = (url: any) => {
   window.open(url, '_blank')
 }
 </script>
