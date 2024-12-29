@@ -63,59 +63,7 @@ export const FacultytableData : Person[] = [
     },
 ]
 
-// export const FacultytableData = computed<Person[]>(() => [
-//     {'name': '郭裕兰',
-//         'title': '教授',
-//         'img': `/${base}/avatars/GuoYulan.jpeg`,
-//         'area': ' 三维视觉与机器人\n\n获中国计算机学会自然科学一等奖',
-//         'url': 'https://www.yulanguo.cn/',
-//         'email': 'guoyulan@sysu.edu.cn',
-//     },
-//     {'name': '黄小红',
-//         'title': '副教授',
-//         'img': '',
-//         'area': '图像处理与识别\n\n获国家科技进步二等奖',
-//         'url': '',
-//         'email': 'huangxh75@mail.sysu.edu.cn',
-//     },
-//     {'name': '张鹏',
-//         'title': '副教授',
-//         'img': `/${base}/avatars/ZhangPeng.jpeg`,
-//         'area': '高分辨率对地观测\n\n获省部级科技进步三等奖2次',
-//         'url': '',
-//         'email': 'zhangpeng5@mail.sysu.edu.cn',
-//     },
-//     {'name': '高庆',
-//         'title': '副教授',
-//         'img': `/${base}/avatars/GaoQing.png`,
-//         'area': '机器人具身智能\n\n入选深圳市海外高层次人才',
-//         'url': 'https://jimmyqing.github.io/',
-//         'email': 'gaoqing2@mail.sysu.edu.cn',
-//     },
-//     {'name': '张瑞茂',
-//         'title': '副教授',
-//         'img': `/${base}/avatars/ZhangRuimao.jpg`,
-//         'area': '机器人具身智能\n\n入选深圳市海外高层次人才',
-//         'url': 'http://zhangruimao.site/#',
-//         'email': 'zhangrm27@mail.sysu.edu.cn',
-//     },
-//     {'name': '张晔',
-//         'title': '博士后',
-//         'img': `/${base}/avatars/Zhangye.jpg`,
-//         'area': '时序信号处理\n\n获高分图像解译软件大赛冠军',
-//         'url': 'https://github.com/crocodilegogogo',
-//         'email': 'zhangy2658@mail.sysu.edu.cn ',
-//     },
-//     {'name': '王龙光',
-//         'title': '博士后',
-//         'img': `/${base}/avatars/WangLongguang.png`,
-//         'area': '底层视觉与加速\n\n入选中国科协青年人才托举工程',
-//         'url': 'https://longguangwang.github.io/',
-//         'email': 'wanglg9@mail.sysu.edu.cn',
-//     },
-// ]);
-
-export const StafftableData = computed<Person[]>(() => [
+export const StafftableData : Person[] = [
     {
         name: '管玮珺',
         title: '科研助理',
@@ -132,9 +80,9 @@ export const StafftableData = computed<Person[]>(() => [
         url: '',
         email: 'liaoxj7@mail.sysu.edu.cn',
     },
-]);
+]
 
-export const GraduatetableData = computed<Person[]>(() => [
+export const GraduatetableData : Person[] = [
     {'name': '高平海',
         'title': '',
         'img': `/${import.meta.env.VITE_BASE_PATH}/avatars/r2020_GaoPinghai.jpg`,
@@ -431,9 +379,9 @@ export const GraduatetableData = computed<Person[]>(() => [
         'url': '',
         'email': 'liyx357@mail2.sysu.edu.cn',
     },
-]);
+]
 
-export const BachelortableData = computed<Person[]>(() => [
+export const BachelortableData : Person[] = [
     {
         name: '钟柠泽',
         title: '',
@@ -442,9 +390,9 @@ export const BachelortableData = computed<Person[]>(() => [
         url: '',
         email: 'zhongnz@mail2.sysu.edu.cn',
     },
-]);
+]
 
-export const AlumnitableData = computed<Person[]>(() => [
+export const AlumnitableData : Person[] = [
     {'name': '敖晟',
         'title': '2024届 博士',
         'img': `/${import.meta.env.VITE_BASE_PATH}/avatars/g2024_AoSheng.jpg`,
@@ -676,9 +624,9 @@ export const AlumnitableData = computed<Person[]>(() => [
         'url': '',
         'email': '',
     },
-]);
+]
 
-export const VisitingtableData = computed<Person[]>(() => [
+export const VisitingtableData : Person[] = [
     {
         name: '符智恒',
         title: '2018.12-2022.03',
@@ -719,7 +667,7 @@ export const VisitingtableData = computed<Person[]>(() => [
         url: '',
         email: '',
     },
-]);
+]
 
 //仅在teaminfo的area项支持\n表示换行
 // export const FacultytableData: Person[] =  [
