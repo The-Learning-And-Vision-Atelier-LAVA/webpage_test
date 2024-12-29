@@ -11,7 +11,7 @@ export interface Person {
 
 const base = import.meta.env.VITE_BASE_PATH;
 
-export const FacultytableData = computed<Person[]>(() => [
+export const FacultytableData : Person[] = [
     {'name': '郭裕兰',
         'title': '教授',
         'img': `/${base}/avatars/GuoYulan.jpeg`,
@@ -61,7 +61,59 @@ export const FacultytableData = computed<Person[]>(() => [
         'url': 'https://longguangwang.github.io/',
         'email': 'wanglg9@mail.sysu.edu.cn',
     },
-]);
+]
+
+// export const FacultytableData = computed<Person[]>(() => [
+//     {'name': '郭裕兰',
+//         'title': '教授',
+//         'img': `/${base}/avatars/GuoYulan.jpeg`,
+//         'area': ' 三维视觉与机器人\n\n获中国计算机学会自然科学一等奖',
+//         'url': 'https://www.yulanguo.cn/',
+//         'email': 'guoyulan@sysu.edu.cn',
+//     },
+//     {'name': '黄小红',
+//         'title': '副教授',
+//         'img': '',
+//         'area': '图像处理与识别\n\n获国家科技进步二等奖',
+//         'url': '',
+//         'email': 'huangxh75@mail.sysu.edu.cn',
+//     },
+//     {'name': '张鹏',
+//         'title': '副教授',
+//         'img': `/${base}/avatars/ZhangPeng.jpeg`,
+//         'area': '高分辨率对地观测\n\n获省部级科技进步三等奖2次',
+//         'url': '',
+//         'email': 'zhangpeng5@mail.sysu.edu.cn',
+//     },
+//     {'name': '高庆',
+//         'title': '副教授',
+//         'img': `/${base}/avatars/GaoQing.png`,
+//         'area': '机器人具身智能\n\n入选深圳市海外高层次人才',
+//         'url': 'https://jimmyqing.github.io/',
+//         'email': 'gaoqing2@mail.sysu.edu.cn',
+//     },
+//     {'name': '张瑞茂',
+//         'title': '副教授',
+//         'img': `/${base}/avatars/ZhangRuimao.jpg`,
+//         'area': '机器人具身智能\n\n入选深圳市海外高层次人才',
+//         'url': 'http://zhangruimao.site/#',
+//         'email': 'zhangrm27@mail.sysu.edu.cn',
+//     },
+//     {'name': '张晔',
+//         'title': '博士后',
+//         'img': `/${base}/avatars/Zhangye.jpg`,
+//         'area': '时序信号处理\n\n获高分图像解译软件大赛冠军',
+//         'url': 'https://github.com/crocodilegogogo',
+//         'email': 'zhangy2658@mail.sysu.edu.cn ',
+//     },
+//     {'name': '王龙光',
+//         'title': '博士后',
+//         'img': `/${base}/avatars/WangLongguang.png`,
+//         'area': '底层视觉与加速\n\n入选中国科协青年人才托举工程',
+//         'url': 'https://longguangwang.github.io/',
+//         'email': 'wanglg9@mail.sysu.edu.cn',
+//     },
+// ]);
 
 export const StafftableData = computed<Person[]>(() => [
     {
