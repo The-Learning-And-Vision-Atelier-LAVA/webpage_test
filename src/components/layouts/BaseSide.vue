@@ -21,6 +21,7 @@ const handleClose = (key: string, keyPath: string[]) => {
     router
     default-active="1"
     class="el-menu-vertical-demo"
+    style="z-index: 990; /* 设置较高的z-index以确保导航栏在最上层 */"
     @open="handleOpen"
     @close="handleClose"
   >
