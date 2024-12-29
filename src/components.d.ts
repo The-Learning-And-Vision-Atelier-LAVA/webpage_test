@@ -11,7 +11,6 @@ declare module 'vue' {
     AvatarInfo_bak: typeof import('./components/AvatarInfo_bak.vue')['default']
     Banner: typeof import('./components/Banner.vue')['default']
     BaseHeader: typeof import('./components/layouts/BaseHeader.vue')['default']
-    BaseSide: typeof import('./components/layouts/BaseSide.vue')['default']
     ElAnchor: typeof import('element-plus/es')['ElAnchor']
     ElAnchorLink: typeof import('element-plus/es')['ElAnchorLink']
     ElAside: typeof import('element-plus/es')['ElAside']

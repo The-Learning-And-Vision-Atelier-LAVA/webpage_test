@@ -5,7 +5,7 @@ import { AreatableData } from '~/assets/data/Research/AreaInfo';
 </script>
 
 <template>
-  <el-aside position="fixed" style="height: 100%; margin-top: 0px; z-index: 1000">
+  <el-aside position="fixed" class="shadow" style="height: 100%; margin-top: 0px; z-index: 1000">
     <el-anchor :offset="70" style="height: 100%; text-align: left; background-color: #ffffff;">
       <el-anchor-link
           v-for="area in AreatableData"
