@@ -24,7 +24,7 @@ const handleDownload = (url: any) => {
         <el-card style="width: 100%" shadow="always" class="shadow">
           <el-row :gutter="20">
             <el-col :span="6">
-              <img :src="require(paper.img)" width="100%" height="150px" style="object-fit: contain"/>
+              <img :src="paper.img" width="100%" height="150px" style="object-fit: contain"/>
             </el-col>
 
             <el-col :span="18" style="line-height: 125%">
