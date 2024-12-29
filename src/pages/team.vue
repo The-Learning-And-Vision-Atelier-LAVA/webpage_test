@@ -1,24 +1,4 @@
 <template>
-<!--  <div class="main">-->
-<!--    <el-row style="margin-top: 20px" :gutter="10">-->
-<!--      <el-col :span="24">-->
-<!--        <el-card class="info_card" shadow="always">-->
-<!--          &lt;!&ndash; 使用新的组件展示每个类别的成员 &ndash;&gt;-->
-<!--          <TeamCategory :category="facultyCategory" />-->
-<!--          <TeamCategory :category="staffCategory" />-->
-<!--          <TeamCategory :category="phDCategory" />-->
-<!--          <TeamCategory :category="masterCategory" />-->
-<!--          <TeamCategory :category="bachelorCategory" />-->
-<!--          <TeamCategory :category="alumniCategory" />-->
-<!--        </el-card>-->
-<!--      </el-col>-->
-<!--    </el-row>-->
-<!--  </div>-->
-
-<!--  <div style="height: 100vh">-->
-
-<!--  </div>-->
-
   <el-aside position="fixed" style="height: 100%; margin-top: 0px; z-index: 1000">
     <el-anchor :offset="70" style="height: 100%; text-align: left; background-color: #ffffff;">
       <el-anchor-link href="#faculty"><el-card class="shadow"><span class="link-text">教&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp师 Faculty</span></el-card></el-anchor-link>
@@ -32,14 +12,6 @@
     </el-anchor>
   </el-aside>
 
-<!--  <el-aside position="fixed">-->
-<!--    <el-menu-->
-<!--        default-active="2"-->
-<!--        class="el-menu-vertical-demo"-->
-<!--    >-->
-<!--      <el-menu-item index="1-1">item one</el-menu-item>-->
-<!--    </el-menu>-->
-<!--  </el-aside>-->
 
   <el-main class="main">
     <el-row style="margin-top: 20px" :gutter="10">
