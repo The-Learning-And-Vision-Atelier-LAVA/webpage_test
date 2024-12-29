@@ -14,7 +14,7 @@ export const ServertableData: Resourceitem[] =  [
     {
         name: 'Amax RTXTitan4卡服务器',
         person: '李坤洪',
-        img: '/src/assets/data/Resource/images/RTXTitan1.png',
+        img: `/${import.meta.env.VITE_BASE_PATH}/resources/RTXTitan1.png`,
         url: '',
         num: '1台',
         intro: '4卡titan服务器，单卡24G显存，服务器上存放的数据集主要是深度估计与三位重建相关',
@@ -22,7 +22,7 @@ export const ServertableData: Resourceitem[] =  [
     {
         name: 'Amax RTXTitan4卡服务器',
         person: '王宇坤',
-        img: '/src/assets/data/Resource/images/RTXTitan2.png',
+        img: `/${import.meta.env.VITE_BASE_PATH}/resources/RTXTitan2.png`,
         url: '',
         num: '1台',
         intro: '4卡titan服务器，单卡24G显存，服务器上存放的数据集主要是点云处理相关',
@@ -34,7 +34,7 @@ export const HardwawretableData: Resourceitem[] =  [
     {
         name: '大疆M300RTK无人机',
         person: '管玮珺',
-        img: '/src/assets/data/Resource/images/DJI_M300_RTK.jpg',
+        img: `/${import.meta.env.VITE_BASE_PATH}/resources/DJI_M300_RTK.jpg`,
         url: 'https://www.dji.com/cn/support/product/matrice-300',
         num: '1台',
         intro: '可搭配禅思L1进行图像和点云获取，或者搭配法罗进行高精度点云获取',
@@ -42,7 +42,7 @@ export const HardwawretableData: Resourceitem[] =  [
     {
         name: '别克GL8自动驾驶数据采集平台',
         person: '管玮珺',
-        img: '/src/assets/data/Resource/images/GL8.jpg',
+        img: `/${import.meta.env.VITE_BASE_PATH}/resources/GL8.jpg`,
         url: '',
         num: '1台',
         intro: '配合数据采集平台，可以获取自动驾驶场景的图像、热成像、点云数据',
@@ -54,7 +54,7 @@ export const SoftwawretableData: Resourceitem[] =  [
     {
         name: 'ContextCapture',
         person: '张勇健',
-        img: '/src/assets/data/Resource/images/ContextCapture.jpg',
+        img: `/${import.meta.env.VITE_BASE_PATH}/resources/ContextCapture.jpg`,
         url: 'https://bentleybsy.wpengine.com/software/itwin-capture-modeler/',
         num: '1套',
         intro: '三维重建软件，支持导入图像序列进行稠密三维重建，可以加入GPS信息，新版本软件名为iTwin Capture',
@@ -66,7 +66,7 @@ export const DatasettableData: Resourceitem[] =  [
     {
         name: 'KITTI2015-stereo',
         person: '李坤洪',
-        img: '/src/assets/data/Resource/images/kitti15_stereo.jpg',
+        img: `/${import.meta.env.VITE_BASE_PATH}/resources/kitti15_stereo.jpg`,
         url: 'https://www.cvlibs.net/datasets/kitti/eval_scene_flow.php?benchmark=stereo',
         num: '1.7GB',
         intro: '自动驾驶场景双目立体匹配数据集，提供RGB和灰度格式的双目图像对、相机标定参数、点云转化得到的立体匹配真值和光流真值',
@@ -74,7 +74,7 @@ export const DatasettableData: Resourceitem[] =  [
     {
         name: 'CRE-stereo',
         person: '李坤洪',
-        img: '/src/assets/data/Resource/images/cre_stereo.png',
+        img: `/${import.meta.env.VITE_BASE_PATH}/resources/cre_stereo.png`,
         url: 'https://www.cvlibs.net/datasets/kitti/eval_scene_flow.php?benchmark=stereo',
         num: '1.7GB',
         intro: '仿真双目立体匹配数据集，提供RGB格式的双目图像对、立体匹配真值，不带相机参数，数据内容与SceneFlow数据集类似，为随机物体在环境中漂浮，经过渲染后得到视差值',
@@ -82,7 +82,7 @@ export const DatasettableData: Resourceitem[] =  [
     {
         name: 'KITTI2015-stereo',
         person: '李坤洪',
-        img: '/src/assets/data/Resource/images/kitti15_stereo.jpg',
+        img: `/${import.meta.env.VITE_BASE_PATH}/resources/kitti15_stereo.jpg`,
         url: 'https://www.cvlibs.net/datasets/kitti/eval_scene_flow.php?benchmark=stereo',
         num: '1.7GB',
         intro: '自动驾驶场景双目立体匹配数据集，提供RGB和灰度格式的双目图像对、相机标定参数、点云转化得到的立体匹配真值和光流真值',
