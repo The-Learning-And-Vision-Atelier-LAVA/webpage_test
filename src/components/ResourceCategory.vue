@@ -17,7 +17,7 @@ const CardHeight = ref<number>(100);
 const computedHeight = computed(() => {
   if (catRowDiv.value) {
     const width = catRowDiv.value.offsetWidth;
-    return width * 0.2;
+    return width * 0.12;
   }
   return CardHeight.value;
 });
@@ -25,7 +25,7 @@ const computedHeight = computed(() => {
 onMounted(() => {
   if (catRowDiv.value) {
     const width = catRowDiv.value.offsetWidth;
-    CardHeight.value = width * 0.2;
+    CardHeight.value = width * 0.12;
   }
 });
 </script>
