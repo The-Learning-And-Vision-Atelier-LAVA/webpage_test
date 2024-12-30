@@ -8,6 +8,26 @@ const props = defineProps({
     default: () => ({ title: '', data: [] })
   }
 });
+
+import { ref, onMounted, computed } from 'vue';
+const catRowDiv = ref<HTMLDivElement>();
+
+const CardHeight = ref<number>(100);
+// 使用计算属性确保高度始终为数字类型
+const computedHeight = computed(() => {
+  if (catRowDiv.value) {
+    const width = catRowDiv.value.offsetWidth;
+    return width * 0.2;
+  }
+  return CardHeight.value;
+});
+
+onMounted(() => {
+  if (catRowDiv.value) {
+    const width = catRowDiv.value.offsetWidth;
+    CardHeight.value = width * 0.2;
+  }
+});
 </script>
 
 <template>
@@ -16,9 +36,9 @@ const props = defineProps({
       <div class="title_bar" />
       <span class="title_text">{{ category.title }}</span>
     </div>
-    <div class="card-body" style="margin-top: 15px">
+    <div class="card-body" style="margin-top: 15px" ref="catRowDiv">
       <el-row :gutter="20">
-        <el-col :span="6" style="margin-bottom: 20px" v-for="resource in category.data">
+        <el-col :span="6" :height="CardHeight + 'px' "  style="margin-bottom: 20px" v-for="resource in category.data">
           <ResourceItem
               :name="resource.name"
               :person="resource.person"

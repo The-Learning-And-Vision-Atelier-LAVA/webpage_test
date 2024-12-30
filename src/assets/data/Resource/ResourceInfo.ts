@@ -12,21 +12,77 @@ export interface Resourceitem {
 //服务器资源列表
 export const ServertableData: Resourceitem[] =  [
     {
-        name: 'Amax RTXTitan4卡服务器',
+        name: 'A100 2卡服务器',
+        person: '杨荣坤',
+        img: '',
+        url: '',
+        num: '1台',
+        intro: '8卡V100服务器，单卡32G显存',
+    },
+    {
+        name: 'V100 8卡服务器',
+        person: '姜润青',
+        img: '',
+        url: '',
+        num: '1台',
+        intro: '8卡V100服务器，单卡32G显存',
+    },
+    {
+        name: '3090 8卡服务器',
+        person: '高平海',
+        img: '',
+        url: '',
+        num: '1台',
+        intro: '8卡3090服务器，单卡24G显存',
+    },
+    {
+        name: '3090 8卡服务器',
+        person: '宋卓',
+        img: '',
+        url: '',
+        num: '1台',
+        intro: '8卡3090服务器，单卡24G显存',
+    },
+    {
+        name: 'RTXTitan 4卡服务器',
         person: '李坤洪',
         img: '',
         url: '',
         num: '1台',
-        intro: '4卡titan服务器，单卡24G显存，服务器上存放的数据集主要是深度估计与三位重建相关',
+        intro: '4卡titan服务器，单卡24G显存',
     },
     {
-        name: 'Amax RTXTitan4卡服务器',
+        name: 'RTXTitan 4卡服务器',
         person: '王宇坤',
         img: '',
         url: '',
         num: '1台',
-        intro: '4卡titan服务器，单卡24G显存，服务器上存放的数据集主要是点云处理相关',
-    }
+        intro: '4卡titan服务器，单卡24G显存',
+    },
+    {
+        name: '2080Ti 8卡服务器',
+        person: '陈铭林',
+        img: '',
+        url: '',
+        num: '1台',
+        intro: '8卡2080Ti服务器，单卡12G显存',
+    },
+    {
+        name: '2080Ti 8卡服务器',
+        person: '张勇健',
+        img: '',
+        url: '',
+        num: '1台',
+        intro: '8卡2080Ti服务器，单卡12G显存',
+    },
+    {
+        name: 'GPU工作站',
+        person: '研究生',
+        img: '',
+        url: '',
+        num: '45台',
+        intro: '单卡或双卡4090/3090/3080工作站，用于代码调试于本地验证',
+    },
 ]
 
 //硬件资源列表，包括各类传感器、载具等
