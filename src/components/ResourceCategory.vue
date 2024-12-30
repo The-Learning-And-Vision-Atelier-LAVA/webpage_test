@@ -38,7 +38,7 @@ onMounted(() => {
     </div>
     <div class="card-body" style="margin-top: 15px" ref="catRowDiv">
       <el-row :gutter="20">
-        <el-col :span="6" :height="CardHeight + 'px' "  style="margin-bottom: 20px" v-for="resource in category.data">
+        <el-col :span="6"  style="margin-bottom: 20px" v-for="resource in category.data">
           <ResourceItem
               :name="resource.name"
               :person="resource.person"
@@ -46,6 +46,7 @@ onMounted(() => {
               :url="resource.url"
               :num="resource.num"
               :intro="resource.intro"
+              :height="CardHeight"
           />
         </el-col>
       </el-row>

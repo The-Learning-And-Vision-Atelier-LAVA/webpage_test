@@ -172,7 +172,7 @@ export const DatasettableData: Resourceitem[] =  [
         person: '李坤洪',
         img: `/${import.meta.env.VITE_BASE_PATH}/resources/dataset_falling_things.jpg`,
         url: 'https://research.nvidia.com/publication/2018-06_falling-things-synthetic-dataset-3d-object-detection-and-pose-estimation',
-        num: '106MB',
+        num: '87GB',
         intro: '渲染的室内外场景数据集，仅下载了对应的RGB与深度图',
     },
     {
@@ -202,9 +202,9 @@ export const DatasettableData: Resourceitem[] =  [
     {
         name: 'Instereo2K',
         person: '李坤洪',
-        img: `/${import.meta.env.VITE_BASE_PATH}/resources/dataset_kitti_12.jpg`,
+        img: `/${import.meta.env.VITE_BASE_PATH}/resources/dataset_Instereo2K.jpg`,
         url: 'https://github.com/YuhuaXu/StereoDataset',
-        num: '1.7GB',
+        num: '17GB',
         intro: '室内真实场景立体匹配数据集，提供RGB和视差值，不带相机参数',
     },
     {

@@ -8,7 +8,8 @@ const props = defineProps({
   name: String,  //资源的名字，硬件最好是 品牌+系列+型号，让人能一眼明白最主要参数，比如 “Amax RTXTitan4卡服务器”、“速腾RubyPlus 128线激光雷达”、”大疆M300RTK无人机“
   url: String,  //资源的链接，硬件给到官网该产品的页面或者指向产品说明文件下载页面，软件给到官网页面或者说明文档，数据集给到官方说明页面或者论文连接
   num: String,  //资源的数量，硬件给台数/个数，软件可以空置，数据集给出我们已经下载的数据集大小（如45GB）
-  intro: String  //资源的介绍
+  intro: String,  //资源的介绍
+  height: Number,
 });
 
 const handleDownload = (url: any) => {
@@ -27,7 +28,7 @@ const imgSrc = computed(() =>
 </script>
 
 <template>
-  <el-card style="height: 100%" class="shadow">
+  <el-card :height="height + 'px' " style="height: 100%" class="shadow">
     <el-row :gutter="2">
       <el-col :span="8">
         <div class="info-image">
