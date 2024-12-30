@@ -28,7 +28,7 @@ const imgSrc = computed(() =>
 </script>
 
 <template>
-  <el-card :style="'height:' + height + 'px' " class="shadow">
+  <el-card :style="`height: ${height}px`" class="shadow">
     <el-row :gutter="2">
       <el-col :span="8">
         <div class="info-image">

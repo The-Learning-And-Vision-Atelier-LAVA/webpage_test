@@ -17,7 +17,7 @@ export const ServertableData: Resourceitem[] =  [
         img: '',
         url: '',
         num: '1台',
-        intro: '8卡V100服务器，单卡32G显存',
+        intro: '2卡A100服务器，单卡80G显存',
     },
     {
         name: 'V100 8卡服务器',
