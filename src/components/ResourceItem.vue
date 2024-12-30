@@ -35,7 +35,7 @@ const imgSrc = computed(() =>
     <el-row :gutter="2">
       <el-col :span="8">
         <div class="info-image">
-          <img :src="imgSrc" width="100%" :style="{ 'max-height': `${0.7 * height}px`, 'object-fit': 'fill', }" />
+          <img :src="imgSrc" width="100%" :style="{ 'max-height': `${0.6 * height}px`, 'object-fit': 'fill', }" />
 <!--          <img :src="imgSrc" width="100%" height="80%" style="object-fit: fill; max-height: 150px;" />-->
           <!--        <el-avatar shape="square" :size="100rem" fit="cover" :src="img" style="max-width: 150px;"/>-->
         </div>

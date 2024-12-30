@@ -23,7 +23,7 @@ const carouselHeight = ref<number>(450);
 const calculateHeight = () => {
   if (carouselDiv.value) {
     const width = carouselDiv.value.offsetWidth;
-    return width * 0.12;
+    return width * 0.45;
   }
   return carouselHeight.value;
 };
