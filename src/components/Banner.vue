@@ -13,27 +13,44 @@
 </template>
 
 <script lang="ts" setup>
-import { ref, onMounted, computed } from 'vue';
+import { ref, onMounted, computed, watch } from 'vue';
 import {Bannerimages} from "~/assets/data/home/Carouseldata";
 
 const carouselDiv = ref<HTMLDivElement>();
-
 const carouselHeight = ref<number>(450);
-// 使用计算属性确保高度始终为数字类型
-const computedHeight = computed(() => {
+
+// 计算高度的函数
+const calculateHeight = () => {
   if (carouselDiv.value) {
     const width = carouselDiv.value.offsetWidth;
-    return width * 0.45;
+    return width * 0.12;
   }
   return carouselHeight.value;
-});
+};
 
-onMounted(() => {
-  if (carouselDiv.value) {
-    const width = carouselDiv.value.offsetWidth;
-    carouselHeight.value = width * 0.45;
-  }
-});
+// 使用计算属性确保高度始终为数字类型
+const computedHeight = computed(() => calculateHeight());
+
+// 使用 watch 替代 onMounted
+watch(computedHeight, (newHeight) => {
+  carouselHeight.value = newHeight;
+}, { immediate: true }); // immediate 选项确保在挂载时立即执行
+
+// // 使用计算属性确保高度始终为数字类型
+// const computedHeight = computed(() => {
+//   if (carouselDiv.value) {
+//     const width = carouselDiv.value.offsetWidth;
+//     return width * 0.45;
+//   }
+//   return carouselHeight.value;
+// });
+//
+// onMounted(() => {
+//   if (carouselDiv.value) {
+//     const width = carouselDiv.value.offsetWidth;
+//     carouselHeight.value = width * 0.45;
+//   }
+// });
 </script>
 
 <style scoped>

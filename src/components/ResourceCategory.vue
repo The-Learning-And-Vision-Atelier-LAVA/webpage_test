@@ -9,25 +9,27 @@ const props = defineProps({
   }
 });
 
-import { ref, onMounted, computed } from 'vue';
-const catRowDiv = ref<HTMLDivElement>();
+import { ref, onMounted, computed, watch } from 'vue';
 
+const catRowDiv = ref<HTMLDivElement | null>(null);
 const CardHeight = ref<number>(100);
-// 使用计算属性确保高度始终为数字类型
-const computedHeight = computed(() => {
+
+// 计算高度的函数
+const calculateHeight = () => {
   if (catRowDiv.value) {
     const width = catRowDiv.value.offsetWidth;
     return width * 0.12;
   }
   return CardHeight.value;
-});
+};
 
-onMounted(() => {
-  if (catRowDiv.value) {
-    const width = catRowDiv.value.offsetWidth;
-    CardHeight.value = width * 0.12;
-  }
-});
+// 使用计算属性确保高度始终为数字类型
+const computedHeight = computed(() => calculateHeight());
+
+// 使用 watch 替代 onMounted
+watch(computedHeight, (newHeight) => {
+  CardHeight.value = newHeight;
+}, { immediate: true }); // immediate 选项确保在挂载时立即执行
 </script>
 
 <template>
