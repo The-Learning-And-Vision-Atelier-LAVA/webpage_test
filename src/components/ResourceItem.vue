@@ -9,7 +9,10 @@ const props = defineProps({
   url: String,  //资源的链接，硬件给到官网该产品的页面或者指向产品说明文件下载页面，软件给到官网页面或者说明文档，数据集给到官方说明页面或者论文连接
   num: String,  //资源的数量，硬件给台数/个数，软件可以空置，数据集给出我们已经下载的数据集大小（如45GB）
   intro: String,  //资源的介绍
-  height: Number,
+  height: {
+    type: Number,
+    default: 100 // 假设默认高度为 100px
+  },
 });
 
 const handleDownload = (url: any) => {
@@ -32,7 +35,8 @@ const imgSrc = computed(() =>
     <el-row :gutter="2">
       <el-col :span="8">
         <div class="info-image">
-          <img :src="imgSrc" width="100%" height="80%" style="object-fit: cover; max-height: 150px;" />
+          <img :src="imgSrc" width="100%" :style="{ 'max-height': `${0.7 * height}px`, 'object-fit': 'fill', }" />
+<!--          <img :src="imgSrc" width="100%" height="80%" style="object-fit: fill; max-height: 150px;" />-->
           <!--        <el-avatar shape="square" :size="100rem" fit="cover" :src="img" style="max-width: 150px;"/>-->
         </div>
       </el-col>
