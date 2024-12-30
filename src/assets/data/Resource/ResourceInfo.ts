@@ -157,7 +157,7 @@ export const DatasettableData: Resourceitem[] =  [
         img: `/${import.meta.env.VITE_BASE_PATH}/resources/dataset_cre_stereo.jpg`,
         url: 'https://github.com/megvii-research/CREStereo',
         num: '383GB',
-        intro: '仿真双目立体匹配数据集，提供RGB格式的双目图像对、立体匹配真值，不带相机参数，数据内容与SceneFlow数据集类似，为随机物体在环境中漂浮，经过渲染后得到视差值',
+        intro: '仿真双目立体匹配数据集，提供RGB格式的双目图像对、立体匹配真值，不带相机参数',
     },
     {
         name: 'ETH3D-stereo',
