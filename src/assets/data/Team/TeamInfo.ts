@@ -101,7 +101,7 @@ export const GraduatetableData : Person[] = [
         'title': '',
         'img': `/${base}/avatars/r2021_ChenMinglin.jpg`,
         'area': '三维重建与生成',
-        'url': '',
+        'url': 'https://minglin-chen.github.io/',
         'email': 'chenmlin8@mail2.sysu.edu.cn',
     },
     {'name': '李坤洪',
@@ -640,7 +640,7 @@ export const VisitingtableData : Person[] = [
         title: '2020.09-2022.01',
         img: `/${base}/avatars/visiting_HuQingyong.jpg`,
         area: '牛津大学',
-        url: '',
+        url: 'https://qingyonghu.github.io/',
         email: '',
     },
     {

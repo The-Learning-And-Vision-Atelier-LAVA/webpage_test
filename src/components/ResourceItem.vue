@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { defineProps } from 'vue';
+import {computed, defineProps, ref} from 'vue';
 
 // 定义组件的属性
 const props = defineProps({
@@ -14,6 +14,16 @@ const props = defineProps({
 const handleDownload = (url: any) => {
   window.open(url, '_blank')
 }
+
+// 构建基础路径
+const basePath = ref(import.meta.env.VITE_BASE_PATH);
+
+// 处理图片路径
+const imgSrc = computed(() =>
+    props.img
+        ? props.img
+        : `/${basePath.value}/resources/no_img.png`
+);
 </script>
 
 <template>
@@ -21,7 +31,7 @@ const handleDownload = (url: any) => {
     <el-row :gutter="2">
       <el-col :span="8">
         <div class="info-image">
-          <img :src="img" width="100%" height="80%" style="object-fit: cover; max-height: 150px;" />
+          <img :src="imgSrc" width="100%" height="80%" style="object-fit: cover; max-height: 150px;" />
           <!--        <el-avatar shape="square" :size="100rem" fit="cover" :src="img" style="max-width: 150px;"/>-->
         </div>
       </el-col>
