@@ -296,7 +296,7 @@ export const DatasettableData: Resourceitem[] =  [
         intro: '仿真数据集，提供了RGB图像、视差真值和相机内外参',
     },
     {
-        name: 'VitualKITTI2',
+        name: 'VirtualKITTI2',
         person: '李坤洪',
         img: `/${import.meta.env.VITE_BASE_PATH}/resources/dataset_vkitti2.jpg`,
         url: 'https://arxiv.org/pdf/2001.10773',
